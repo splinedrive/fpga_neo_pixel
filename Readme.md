@@ -28,8 +28,10 @@ leds or calculate color spaces. I have tested it on an Arduiono-Nano but it is e
 port the Libs to other SoCs. The only things that matter are the SPI and Neopixel managment.
 
 The implementation is based on an iceFun (ice40-hx8k, https://www.robot-electronics.co.uk/icefun.html). It is easy to port it to another FPGA, 
-you only have to specify the frequency and pins. The current implementation is using a 16K-Fifo (ice40-hk8), 
-maybe you can even try to control an 16k strip with it ;)
+you only have to specify the frequency and pins. The current implementation is using a 1024-Fifo (ice40-hk8), 
+maybe you can even try to control an 1024 strip with it. The possibility to control over 5K with ice40-hx8 (128k/24 ~ 5.3k)
+is given. You have only to modify the ADDRESS_LINE parameter of ram_sync in ws2812_ctl.v
+
 A short video shows the result https://www.youtube.com/watch?v=bKlIKz7Y1Lk of my implementation.
 
 A FPGA has many I/Os just extend it to many 1-wire-outputs to handle more strips in parallel.
