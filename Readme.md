@@ -32,7 +32,7 @@ you only have to specify the frequency and pins. The current implementation is u
 maybe you can even try to control an 1024 strip with it. The possibility to control over 5K with ice40-hx8 (128k/24 ~ 5.3k)
 is given. You have only to modify the ADDRESS_LINE parameter of ram_sync in ws2812_ctl.v
 
-A short video shows the result https://www.youtube.com/watch?v=bKlIKz7Y1Lk of my implementation.
+A short video shows the result https://www.youtube.com/watch?v=IhsmrSM3q_E of my implementation.
 
 A FPGA has many I/Os just extend it to many 1-wire-outputs to handle more strips in parallel.
 I will make my fpga project available on github and if you find the time to take a 
