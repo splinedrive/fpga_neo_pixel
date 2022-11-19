@@ -1,3 +1,4 @@
+PROJ = ws2812_ctl
 PIN_DEF = ws2812_ctl.pcf
 DEVICE = hx8k
 
